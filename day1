@@ -58,4 +58,266 @@ public class Main {
 output:
 20 10
 
+q:5  accept the character print the character ***************
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number:");
+   char character = dinesh.next().charAt(0);
+        System.out.print( character);
+
+    }
+}
+
+output:
+ Enter the number:dinesh
+d
+
+q:6 Problem Statement:**********************
+Given 2 numbers, print the first number as a 5-digit number and print the second number in the next line with 5 width space
+Explanation: If numbers are 25 and 98,print the first number as 00025 and second number as 3 space and 98(   98).
+Input Format:
+Accept the two integer as a input
+Output Format:
+5 digit number format followed by number with 5 width space in new line.
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number 1 :");
+   int num1 = dinesh.nextInt();
+   System.out.print(" Enter the number 2:");
+   int num2 = dinesh.nextInt();
+   // %05d    1. 0 comes the empty place and 5 is digit
+   //         2. %5d comes only 5 digit
+   System.out.printf(" %05d \n %5d",num1,num2);
+
+
+    }
+}
+ output:
+
+Enter the number 1 :13
+ Enter the number 2:56
+ 00013 
+    56
+
+q:7 Accept an integer value and print the corresponding character associated with the integer value. ********
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number 1 :");
+   int Ascii = dinesh.nextInt();
+   char character = (char)Ascii;
+   System.out.print(" Ascii :"+character);
+
+
+    }
+}
+
+output:
+
+Enter the number 1 :65
+ Ascii :A
+
+q:8*****************************
+8.Problem Statement:
+Accept a character and print its corresponding ASCII value.
+Input Format:
+Accept a character as input.
+Output Format:
+Input character:ASCII value
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   char character = dinesh.next().charAt(0);
+   int ascii = (char)character;
+   System.out.print(" Character :"+ascii);
+
+
+    }
+}
+
+output:
+Enter the number :A
+ Character :65
+
+q:9.Accept a floating point value and print it with 20 width space and round off to 4 decimal places.*************************
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   float num1 = dinesh.nextFloat();
+   System.out.printf(" %20.4f\n",num1);
+
+
+    }
+}
+
+output:
+
+ Enter the number :19.5
+              19.5000
+
+q:10**************
+10.Accept a floating point  value and precision value and print the floating point  value according to the precision given.
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   float num1 = dinesh.nextFloat();
+        System.out.print(" Enter the  precision number :");
+   int precision = dinesh.nextInt();
+   System.out.printf("%."+precision+"f",num1);
+
+
+    }
+}
+
+output:
+
+Enter the number :15.2
+ Enter the  precision number :6
+15.200000
+
+q:11.Display the given floating point value to its nearest integer value
+*************************
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   float num1 = dinesh.nextFloat();
+     System.out.println(Math.round(num1));
+
+
+    }
+}
+output:
+Enter the number :19.6
+20
+
+q:12.Accept a number that starts with 0x it indicates that the number is a hexadecimal value. Print the corresponding decimal value.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   String input = dinesh.nextLine();
+   System.out.print(Integer.decode(input));     // 0X is hexadecimal
+                                                // 0 is octal
+                                                // normal value in decimal
+   
+
+    }
+}
+
+output:
+ Enter the number :0Xff
+255
+
+q:13 Get a value and print its corresponding hexadecimal number ******************
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the number :");
+   int input = dinesh.nextInt();
+   System.out.print(Integer.toHexString(input));
+
+
+    }
+}
+
+output:
+ Enter the number :255
+ff
+
+
+q:14  Get a floating point value and print the floating point value without any trailing zeros.
+*************************
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+   Scanner dinesh = new Scanner(System.in);
+   System.out.print(" Enter the name :");
+   String name = dinesh.next();
+   System.out.print(name.replaceAll("0*$","").replaceAll("\\.$",""));
+
+
+    }
+}
+output:
+
+ Enter the name :35.630
+35.63
+
+
+q:15.Print the statement using concatenation **************************
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+  String name1 =" hello";
+  String name2 =" world";
+  System.out.print(name1+" "+name2);
+
+    }
+}
+
+output:
+ hello  world
+
+
 
