@@ -1,0 +1,61 @@
+q: 1 print the given name*****************************
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Let's learn 'JAVA' together with Selvi");
+    }
+
+}
+output:
+Let's learn 'JAVA' together with Selvi
+
+q:2 print given statement*******************************
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("If you want to shine like a \"Sun\",first burn like a \"Sun\".");
+    }
+
+}
+output:
+ If you want to shine like a "Sun",first burn like a "Sun"
+
+q:3 print the given statement **********************
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+                System.out.println("\\n");
+
+
+    }
+}
+
+output:
+\n
+
+q:4 print the given number**************
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+                int num1 =20;
+                int num2 = 10;
+                System.out.print(num1+" "+num2);
+
+
+    }
+}
+
+output:
+20 10
+
+
