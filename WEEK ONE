@@ -1,5 +1,5 @@
 
-q:1 import java.util.Scanner;
+import java.util.Scanner;
 
 public class Trian {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Trian {
 
 }
 
-Q:2
+
 import java.util.Scanner;
 
 public class MaxOfThree {
@@ -49,28 +49,6 @@ public class MaxOfThree {
     }
 }
 
-q:3
-import java.util.Scanner;
-
-public class oddoreven{
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if(a%2==0){
-            System.out.println("Even");
-        }
-        else{
-            System.out.println("Odd");
-        }
-        sc.close();
-    }
-}
-
-
-
-
-q:4
-
 
 import java.util.Scanner;
 
@@ -88,7 +66,29 @@ public class oddoreven{
     }
 }
 
-q:5
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class oddoreven{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a%2==0){
+            System.out.println("Even");
+        }
+        else{
+            System.out.println("Odd");
+        }
+        sc.close();
+    }
+}
+
+
     import java.util.Scanner;
     public class divbythreefive{
         public static void main(String[] args) {
@@ -106,7 +106,7 @@ q:5
         
     }
 
-Q:6
+
 import java.util.Scanner;
 
 public class Trian {
@@ -130,7 +130,7 @@ public class Trian {
 
 }
 
-Q:7
+
 import java.util.Scanner;
 
 public class EvenRange {
@@ -152,7 +152,7 @@ public class EvenRange {
 }
 
 
-Q:8
+
     import java.util.Scanner;
     public class posnegzero {
         public static void main(String[] args) {
@@ -172,7 +172,7 @@ Q:8
         
     }
 
-Q:7
+
 import java.util.Scanner;
 
 public class yearprob {
@@ -189,7 +189,7 @@ public class yearprob {
 }
 }
 
-Q:8
+
 import java.util.Scanner;
 
 public class MaxMin {
@@ -216,7 +216,7 @@ public class MaxMin {
 }
 
     
-Q:9
+
 import java.util.Scanner;
 
 public class CustomerGrouping {
@@ -252,7 +252,7 @@ public class CustomerGrouping {
 
 
 
-Q:10
+
 import java.util.Scanner;
 
 public class MileageRemunerationCalculator {
@@ -276,7 +276,7 @@ public class MileageRemunerationCalculator {
 }
 
 
-Q:11
+
 import java.util.Scanner;
 
 public class Cht {
@@ -299,7 +299,7 @@ public class Cht {
 
 
 
-Q:12
+
 import java.util.Scanner;
 
 public class Chtype {
@@ -320,7 +320,7 @@ public class Chtype {
     }
 }
 
-Q:13
+
 
 import java.util.Scanner;
 
@@ -347,7 +347,7 @@ public class MaxOfThree {
                 System.out.println(max);
     }
 }
-Q:14
+
 import java.util.Scanner;
 
 public class oddoreven{
