@@ -1,367 +1,297 @@
 
-import java.util.Scanner;
+Q:1 ODD  OR EVEN PROBLEM******************
 
-public class Trian {
+import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+  Scanner dk = new Scanner(System.in);
+  System.out.println("Enter the number:");
+  int num = dk.nextInt();
+  System.out.println((num%2==0)?("even"):("odd"));
 
-        
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-
-    
-        if (a == b && b == c) {
-            System.out.println("Equilateral Triangle");
-        } else if (a == b || b == c || a == c) {
-            System.out.println("Isosceles Triangle");
-        } else {
-            System.out.println("Scalene Triangle");
-        }
     }
-
 }
+OUTPUT:
+Enter the number:
+79
+odd
 
+q:2 POSITIVE OR NEGATIVE  ***************
 
-import java.util.Scanner;
-
-public class MaxOfThree {
+import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+  Scanner dk = new Scanner(System.in);
+  System.out.println("Enter the number:");
+  int num = dk.nextInt();
+   if(num>=0)
+       System.out.println("positive");
+   else 
+       System.out.println("negative");
 
-        // Read three integers
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-
-        
-        int max;
-
-        if (a >= b && a >= c) {
-            max = a;
-        } else if (b >= a && b >= c) {
-            max = b;
-        } else {
-            max = c;
-        }
-
-                System.out.println(max);
     }
 }
+OUTPUT:
+Enter the number:
+-89
+negative
 
+q:3  DIVISIBLE BY 3 AND 5******
 
-import java.util.Scanner;
-
-public class oddoreven{
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if(a%2==0){
-            System.out.println("Even");
-        }
-        else{
-            System.out.println("Odd");
-        }
-        sc.close();
-    }
-}
-
-
-
-
-
-
-
-import java.util.Scanner;
-
-public class oddoreven{
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if(a%2==0){
-            System.out.println("Even");
-        }
-        else{
-            System.out.println("Odd");
-        }
-        sc.close();
-    }
-}
-
-
-    import java.util.Scanner;
-    public class divbythreefive{
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            int a = sc.nextInt();
-            if(a%3==0 && a%5==0){
-                System.out.println("Yes");
-            }
-            else{
-                System.out.print("No");
-            }
-            
-            sc.close();
-        }
-        
-    }
-
-
-import java.util.Scanner;
-
-public class Trian {
+import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-
-    
-        if (a == b && b == c) {
-            System.out.println("Equilateral Triangle");
-        } else if (a == b || b == c || a == c) {
-            System.out.println("Isosceles Triangle");
-        } else {
-            System.out.println("Scalene Triangle");
-        }
+  Scanner dk = new Scanner(System.in);
+  System.out.println("Enter the number:");
+  int num = dk.nextInt();
+   if((num%3==0)||(num%5==0))
+   {
+       System.out.println("yes");
+   }
+   else
+   {
+   System.out.println("no");
+   }
     }
-
 }
+OUTPUT:
+Enter the number:
+15
+yes
 
+Q:4 CONVERT THE DAYS INTO YEARS ,MONTHS,DAYS**********
 
-import java.util.Scanner;
-
-public class EvenRange {
+  import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+  Scanner dk = new Scanner(System.in);
+  System.out.println("Enter the number:");
+  int days = dk.nextInt();
+   int years;
+   int month;
+   int day;
+   if(days>365)
+   {
+       years =days/365;
+       month = (days%365)/30;
+       day = (days%365)%30;
+       System.out.println(years);
+       System.out.println(month);
+       System.out.println(day);
 
-       
-        int s = scanner.nextInt();
-        int d = scanner.nextInt();
-
-     int sum=0;
-        for (int i = s; i <=d; i++) {
-            if (i % 2 == 0) {
-                sum=sum+i;
-                System.out.print(sum+ " ");}
-            
-        }
-    }
-}
-
-
-
-    import java.util.Scanner;
-    public class posnegzero {
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            int a = sc.nextInt();
-            if(a>0){
-                System.out.println("Positive");
-            }
-            else if(a<0){
-                System.out.println("Negative");
-            }
-            else if(a==0){
-                System.out.print("Zero");
-            }
-            sc.close();
-        }
-        
+   }
     }
 
-
-import java.util.Scanner;
-
-public class yearprob {
-     public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            int a = sc.nextInt();
-            int year = a/365;
-            int rem = a%365;
-            int month = rem/30;
-            int days =rem%30;
-            System.out.println("Years:"+year);
-            System.out.println("Month:"+month);
-            System.out.println("Days:"+days);
 }
-}
+OUTPUT:
+Enter the number:
+400
+1
+1
+5
 
+Q:5  Mileage Remuneration Calculator **************
 
-import java.util.Scanner;
-
-public class MaxMin {
+import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
 
-        
-        int max, min;
+        double start  = 13505.2;
+        double end = 13810.6;
+        double distance = end-start;
+        double remuneration = distance*25;
+        System.out.printf("%.2f \n %.2f",distance,remuneration );
 
-        
-        if (a > b) {
-            max = a;
-            min = b;
-        } else {
-            max = b;
-            min = a;
-        }
+   }
+    }
+OUTPUT:
+305.40 
+ 7635.00
 
-        
-        System.out.println("Max=" + max + " Min=" + min);
+Q:6  6. Max & Min of 2 Number*********
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+       Scanner dk = new Scanner(System.in);
+       System.out.println(" Enter the number 1:");
+       int a = dk.nextInt();
+       System.out.println(" Enter the number2 :");
+       int b = dk.nextInt();
+
+       int max =Math.max(a,b);
+       int min = Math.min(a,b);
+       System.out.println(" Max:"+max+" Min:"+min);
+   }
+    }
+OUTPUT:
+ Enter the number 1:
+5
+ Enter the number2 :
+8
+ Max:8 Min:5
+
+q:7 Max of 3 Numbers ************
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+       Scanner dk = new Scanner(System.in);
+       System.out.println(" Enter the number 1:");
+       int a = dk.nextInt();
+       System.out.println(" Enter the number 2 :");
+       int b = dk.nextInt();
+       System.out.println(" Enter the number 3 :");
+       int c = dk.nextInt();
+       int max =Math.max(a,Math.max(b,c));
+       System.out.println(" Max:"+max);
+
+
+   }
+    }
+OUTPUT:
+Enter the number 1:
+5
+ Enter the number 2 :
+6
+ Enter the number 3 :
+7
+ Max:7
+
+q:8 POSITIVE OR NEGATIVE OTHERWISE ZERO ***************
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+  Scanner dk = new Scanner(System.in);
+  System.out.println("Enter the number:");
+  int num = dk.nextInt();
+   if(num>0)
+       System.out.println("positive");
+   else if(num<0)
+       System.out.println("negative");
+   else
+       System.out.println("zero");
     }
 }
+OUTPUT:
+Enter the number:
+-89
+negative
 
-    
+Q:9 . Customer Groupin********
 
-import java.util.Scanner;
 
-public class CustomerGrouping {
+
+import java.util.*;
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        
-        int age = scanner.nextInt();
-        int gender = scanner.nextInt();
+      Scanner dk = new Scanner (System.in);
+      System.out.println(" Enter the Age:");
+      int age = dk.nextInt();
+       System.out.println(" Enter the gender number:");
+       int gender = dk.nextInt();
+       if((gender!=1)&&(gender!=2))
+       {
+          System.out.println(" invaild");
+       }
+       else
 
-        
-        if (gender == 1) { // Male
-            if (age < 25) {
+       {
+          if(age<25) {
+             if (gender == 1) {
                 System.out.println("Group 1");
-            } else if (age <= 45) {
-                System.out.println("Group 3");
-            } else {
-                System.out.println("Group 5");
-            }
-        } else if (gender == 2) { // Female
-            if (age < 25) {
+             } else {
                 System.out.println("Group 2");
-            } else if (age <= 45) {
+             }
+          }
+          if((age>25)&&(age<45))
+          {
+             if(gender==1)
+             {
+                System.out.println("Group 3");
+             }
+             else {
                 System.out.println("Group 4");
-            } else {
-                System.out.println("Group 5");
+             }
+          }
+          else
+          {
+             System.out.println("All people over 45 years old");
+          }
+
+
+
+       }
+
+   }
+    }
+
+OUTPUT:
+
+Enter the Age:
+37
+ Enter the gender number:
+2
+Group 4
+
+Q:10   SBI Credit Card Eligibilit******
+
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+
+      Scanner dk = new Scanner(System.in);
+      System.out.println(" Enter the Age primary application:");
+      int age = dk.nextInt();
+      System.out.println(" Enter the card application age:");
+      int ApplicationAge = dk.nextInt();
+      System.out.println(" Enter the Employment Id:");
+      int EmploymentID = dk.nextInt();
+      System.out.println(" Enter the income:");
+      int income = dk.nextInt();
+
+      if((age>=21)&&(age<=60))
+      {
+         if(ApplicationAge>18)
+         {
+            if(EmploymentID>=1&&EmploymentID<=4)
+            {
+               if (income >= 300000) {
+                  System.out.println(" Eligible for SBI cards");
+               } else {
+                  System.out.println("Not Eligible for SBI cards");
+               }
             }
-        } else {
-            System.out.println("Invalid");
-        }
-    }
+         }
+            else
+            {
+               System.out.println(" Not Eligible");
+            }
+
+      }
+      else {
+         System.out.println(" Not Eligible for SBI cards");
+      }
+
+   }
 }
+OUTPUT:
+ Enter the Age primary application:
+45
+ Enter the card application age:
+20
+ Enter the Employment Id:
+2
+ Enter the income:
+300
+Not Eligible for SBI cards
 
 
 
 
-import java.util.Scanner;
 
-public class MileageRemunerationCalculator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Enter beginning odometer reading: ");
-        double start = scanner.nextDouble();
-
-        System.out.print("Enter ending odometer reading: ");
-        double end = scanner.nextDouble();
-
-    
-        double distance = end - start;
-
-        
-        double remuneration = Math.round(distance * 25);
-        System.out.printf("You traveled %.2f miles. At Rs.25 per mile, your remuneration is Rs.%.2f\n",
-                          distance, remuneration);
-    }
-}
-
-
-
-import java.util.Scanner;
-
-public class Cht {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read a single character
-        char ch = scanner.next().charAt(0);
-
-        // Check character type
-        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-            System.out.println("alphabet");
-        } else if (ch >= '0' && ch <= '9') {
-            System.out.println("digit");
-        } else {
-            System.out.println("special");
-        }
-    }
-}
-
-
-
-
-import java.util.Scanner;
-
-public class Chtype {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read a single character
-        char ch = scanner.next().charAt(0);
-
-        // Check character type
-        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-            System.out.println("alphabet");
-        } else if (ch >= '0' && ch <= '9') {
-            System.out.println("digit");
-        } else {
-            System.out.println("special");
-        }
-    }
-}
-
-
-
-import java.util.Scanner;
-
-public class MaxOfThree {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read three integers
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-
-        
-        int max;
-
-        if (a >= b && a >= c) {
-            max = a;
-        } else if (b >= a && b >= c) {
-            max = b;
-        } else {
-            max = c;
-        }
-
-                System.out.println(max);
-    }
-}
-
-import java.util.Scanner;
-
-public class oddoreven{
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if(a%2==0){
-            System.out.println("Even");
-        }
-        else{
-            System.out.println("Odd");
-        }
-        sc.close();
-    }
-}
 
 
