@@ -1,1 +1,521 @@
+Print Digits (Right to Left):
 
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        while (n > 0) {
+            System.out.print(n % 10 + " ");
+            n /= 10;
+        }
+    }
+}
+
+OUTPUT:
+17
+7 1
+
+
+ Print Digits (Left to Right):
+
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String s = Integer.toString(n);
+
+        for (char c : s.toCharArray()) {
+            System.out.print(c + " ");
+        }
+    }
+}
+
+OUTPUT:
+
+30112005
+3 0 1 1 2 0 0 5
+
+ Count Digits:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int count = Integer.toString(n).length();
+        System.out.println(count);
+    }
+}
+
+
+OUTPUT:
+3011
+4
+
+ Sum of Digits:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), sum = 0;
+
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+OUTPUT:
+3011
+5
+
+
+ Armstrong Number
+
+import java.util.*;
+
+public class MyJava{
+    
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), temp = n, sum = 0;
+        int digits = Integer.toString(n).length();
+
+        while (temp > 0) {
+            int r = temp % 10;
+            sum += Math.pow(r, digits);
+            temp /= 10;
+        }
+        if (sum == n) System.out.println("Armstrong Number");
+        else System.out.println("Not Armstrong Number");
+    }
+}
+
+OUTPUT:
+153
+Armstrong Number
+
+
+ Collatz Sequence:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        while (n != 1) {
+            System.out.print(n + " ");
+            if (n % 2 == 0) n /= 2;
+            else n = 3 * n + 1;
+        }
+        System.out.println(1);
+    }
+}
+
+
+OUTPUT:
+30112005
+30112005 90336016 45168008 22584004 11292002 5646001 16938004 8469002 4234501 12703504 6351752 3175876 1587938 793969 2381908 1190954 595477 1786432 893216 446608 223304 111652 55826 27913 83740 41870 20935 62806 31403 94210 47105 141316 70658 35329 105988 52994 26497 79492 39746 19873 59620 29810 14905 44716 22358 11179 33538 16769 50308 25154 12577 37732 18866 9433 28300 14150 7075 21226 10613 31840 15920 7960 3980 1990 995 2986 1493 4480 2240 1120 560 280 140 70 35 106 53 160 80 40 20 10 5 16 8 4 2 1
+
+
+
+
+ Harshad Number:
+
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0, temp = n;
+
+        while (temp > 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+
+        if (n % sum == 0) System.out.println("Harshad Number");
+        else System.out.println("Not Harshad Number");
+    }
+}
+
+
+OUTPUT:
+80
+Harshad Number
+
+
+Spy Number:
+
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), temp = n;
+        int sum = 0, prod = 1;
+
+        while (temp > 0) {
+            int r = temp % 10;
+            sum += r;
+            prod *= r;
+            temp /= 10;
+        }
+
+        if (sum == prod) System.out.println("Spy Number");
+        else System.out.println("Not Spy Number");
+    }
+}
+
+OUTPUT:
+123
+Spy Number
+
+
+ Neon Number:
+
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sq = n * n, sum = 0;
+
+        while (sq > 0) {
+            sum += sq % 10;
+            sq /= 10;
+        }
+
+        if (sum == n) System.out.println("Neon Number");
+        else System.out.println("Not Neon Number");
+    }
+}
+
+OUTPUT:
+
+9
+Neon Number
+
+
+ Reverse a Number:
+
+
+import java.util.*;
+
+public class MyJava{
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), rev = 0;
+
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        System.out.println(rev);
+    }
+}
+
+OUTPUT:
+17
+71
+
+
+ Palindrome Number:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), temp = n, rev = 0;
+
+        while (temp > 0) {
+            rev = rev * 10 + temp % 10;
+            temp /= 10;
+        }
+
+        if (rev == n) System.out.println("Palindrome");
+        else System.out.println("Not Palindrome");
+    }
+}
+
+OUTPUT:
+1221
+Palindrome
+
+
+
+ Strong Number:
+
+
+import java.util.*;
+
+public class MyJava{
+    static int fact(int n) {
+        int f = 1;
+        for (int i = 2; i <= n; i++) f *= i;
+        return f;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), temp = n, sum = 0;
+
+        while (temp > 0) {
+            int r = temp % 10;
+            sum += fact(r);
+            temp /= 10;
+        }
+
+        if (sum == n) System.out.println("Strong Number");
+        else System.out.println("Not Strong Number");
+    }
+}
+
+
+OUTPUT:
+145
+Strong Number
+
+
+Magic Number:
+
+
+import java.util.*;
+
+public class MyJava{
+    static int sumDigits(int n) {
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        while (n > 9) n = sumDigits(n);
+
+        if (n == 1) System.out.println("Magic Number");
+        else System.out.println("Not Magic Number");
+    }
+}
+
+OUTPUT:
+55
+Magic Number
+
+
+ Center Digit:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+
+        if (s.length() % 2 == 1) {
+            System.out.println(s.charAt(s.length() / 2));
+        } else {
+            System.out.println(-1);
+        }
+    }
+}
+
+OUTPUT:
+145
+4
+
+
+
+ Frequency of Digits:
+
+
+import java.util.*;
+
+public class MyJava{
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int[] freq = new int[10];
+
+        for (char c : s.toCharArray()) {
+            freq[c - '0']++;
+        }
+
+        for (int i = 0; i < 10; i++) {
+            if (freq[i] > 0) {
+                System.out.println(i + " → " + freq[i]);
+            }
+        }
+    }
+}
+
+OUTPUT:
+3011
+0 → 1
+1 → 2
+3 → 1
+
+
+
+
+ GCD (Euclidean Algorithm)
+
+
+import java.util.*;
+
+public class MyJava{
+    static int gcd(int a, int b) {
+        while (b != 0) {
+            int t = b;
+            b = a % b;
+            a = t;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(), b = sc.nextInt();
+        System.out.println(gcd(a, b));
+    }
+}
+
+OUTPUT:
+69
+12
+3
+
+
+ Swap First and Last Digit:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        if (s.length() == 1) {
+            System.out.println(s);
+            return;
+        }
+
+        char[] arr = s.toCharArray();
+        char temp = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[arr.length - 1] = temp;
+
+        System.out.println(new String(arr));
+    }
+}
+
+OUTPUT:
+3011
+1013
+
+
+ First / Last Occurrence of Digit:
+
+import java.util.*;
+
+public class MyJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        char d = sc.next().charAt(0);
+
+        int first = s.indexOf(d) + 1;
+        int last = s.lastIndexOf(d) + 1;
+
+        System.out.println("First=" + first + ", Last=" + last);
+    }
+}
+OUTPUT:
+3011
+1303
+First=3, Last=4
+
+
+
+Product of Digits:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), prod = 1;
+
+        if (n == 0) {
+            System.out.println(0);
+            return;
+        }
+
+        while (n > 0) {
+            prod *= n % 10;
+            n /= 10;
+        }
+        System.out.println(prod);
+    }
+}
+
+OUTPUT:
+173
+21
+
+
+
+ Sum of Even Digits:
+
+
+import java.util.*;
+
+public class MyJava{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), sum = 0;
+
+        while (n > 0) {
+            int r = n % 10;
+            if (r % 2 == 0) sum += r;
+            n /= 10;
+        }
+        System.out.println(sum);
+    }
+}
+
+OUTPUT:
+2468
+20
