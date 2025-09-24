@@ -289,6 +289,203 @@ OUTPUT:
 300
 Not Eligible for SBI cards
 
+Q:11 TRIANGLE**********
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        if (a == b && b == c) {
+            System.out.println("Equilateral Triangle");
+        } 
+        else if (a == b || b == c || a == c) {
+            System.out.println("Isosceles Triangle");
+        } 
+        else {
+            System.out.println("Scalene Triangle");
+        }
+    }
+}
+OUTPUT:
+18
+18
+18
+
+Equilateral Triangle
+
+Q:13 *************
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0); // read single character
+
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+            System.out.println("alphabet");
+        } 
+        else if (ch >= '0' && ch <= '9') {
+            System.out.println("digit");
+        } 
+        else {
+            System.out.println("special");
+        }
+    }
+}
+OUTPUT:
+A
+alphabet
+
+Q:14**********
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int start = sc.nextInt();
+        int end = sc.nextInt();
+
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+OUTOUT:
+1 10
+2 4 6 8 10
+
+Q:15***********
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+
+        System.out.println(sum);
+    }
+}
+OUTPUT:
+10
+30
+Q:16**********
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int oddSum = 0, evenSum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                evenSum += i;
+            } else {
+                oddSum += i;
+            }
+        }
+
+        System.out.println(oddSum + " " + evenSum);
+    }
+}
+OUTPUT:
+10
+25 30
+
+Q:17**********
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        if (n < 0) {
+            System.out.println("Error! Factorial of a negative number doesn't exist.");
+        } else {
+            long fact = 1;  // use long for larger numbers
+            for (int i = 1; i <= n; i++) {
+                fact *= i;
+            }
+            System.out.println(fact);
+        }
+    }
+}
+OUTPUT:
+5
+120
+
+Q:18 Print Digits Right to Left****
+
+import java.util.*;
+public class Main {
+   public static void main(String[] args) {
+       Scanner dk = new Scanner (System.in);
+       System.out.println("Enter the number:");
+      int num = dk.nextInt();
+      int sum =0;
+      int digit =0;
+      while(num>0)
+      {
+          digit = num%10;
+          System.out.print(digit+"");
+          num =num/10;
+
+      }
+   }
+   }
+OUTPUT:
+Enter the number:
+1234
+4321
+
+ Q19. Sum of Numbers Divisible by 3 or 5************
+
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner dk = new Scanner(System.in);
+        System.out.println("Enter the number 1:");
+        int Start = dk.nextInt();
+        System.out.println("Enter the number 2:");
+        int end = dk.nextInt();
+        int sum = 0;
+        for (int i = Start; i <=end; i++)
+        {
+            if (i % 3 == 0 || i % 5 == 0)
+            {
+                sum = sum+i;
+            }
+        }
+        System.out.print(sum);
+    }
+}
+OUTPUT:
+Enter the number 1:
+1
+Enter the number 2:
+10
+33
 
 
 
