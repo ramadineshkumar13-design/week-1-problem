@@ -1,0 +1,103 @@
+1.Print each character in newline from given string********
+package dinesh21;
+
+import java.util.Scanner;
+
+public class dinesh21 {
+    public static void main(String[] args) {
+        Scanner dk =new Scanner (System.in);
+        System.out.println("Enter the number:");
+        String name = dk.nextLine();
+        for (int i =0;i < name.length();i++)
+        {
+            System.out.println(name.charAt(i));
+        }
+    }
+}
+OUTPUT:
+Enter the number:
+dinesh 
+d
+i
+n
+e
+s
+h
+
+2.Print ASCII value for each character in given string*******
+package dinesh21;
+
+public class ASCII {
+    public static void main(String[] args) {
+        String name = "dinesh kumar";
+        for(int i =0;i<name.length();i++) {
+
+
+            int ascii = name.charAt(i);
+            System.out.println(ascii);
+        }
+    }
+}
+OUTPUT:
+100
+105
+110
+101
+115
+104
+32
+107
+117
+109
+97
+114
+3.Print only UPPERCASE of character in given string**
+
+package dinesh21;
+
+public class uppercase {
+    public static void main(String[] args) {
+        String name = "Dinesh Kumar";
+        for(int i=0;i<name.length();i++) {
+            char ch  = name.charAt(i);
+            if(Character.isUpperCase(ch))
+            {
+                System.out.println(ch);
+            }
+
+
+
+        }
+    }
+}
+OUTPUT:
+D
+K
+4.Print only lowercase of character in given  string***
+package dinesh21;
+
+public class lowercase {
+    public static void main(String[] args) {
+        String name ="Dinesh Kumar";
+        for(int i =0;i<name.length();i++)
+        {
+            char ch = name.charAt(i);
+            if(Character.isLowerCase(ch))
+            {
+                System.out.println(ch);
+            }
+        }
+    }
+}
+OUTPUT:
+i
+n
+e
+s
+h
+u
+m
+a
+r
+
+
