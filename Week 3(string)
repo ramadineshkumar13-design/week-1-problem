@@ -100,4 +100,77 @@ m
 a
 r
 
+5.print Alphabet count in given string*******
+package dinesh21;
+
+public class alphabetcount {
+    public static void main(String[] args) {
+        String name = "dinesh kumar";
+        int count=0;
+        for(int i =0;i<name.length();i++)
+        {
+            char ch = name.charAt(i);
+            if(Character.isLetter(ch))
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+OUTPUT:
+11
+
+6.Print Count of UPPER & lower case of given String***
+package dinesh21;
+
+public class upperandlowercase {
+    public static void main(String[] args) {
+        String name =" DiNesh KuMar";
+        int count =0;
+        int digit=0;
+        for(int i=0;i<name.length(); i++)
+        {
+            char ch = name.charAt(i);
+            if(Character.isUpperCase(ch))
+            {
+                count++;
+            }
+            else if(Character.isLowerCase(ch))
+            {
+                digit++;
+            }
+        }
+        System.out.println("uppercase:"+count);
+        System.out.println("lowercase:"+digit);
+
+
+    }
+}
+OUTPUT:
+uppercase:4
+lowercase:7
+
+7.Create a new string containing only UPPERCASE from given string***
+package dinesh21;
+
+public class onlyUppercaseString {
+    public static void main(String[] args) {
+        String name =" DiNeSH kumAr";
+        for(int i =0;i<name.length();i++)
+        {
+            char ch = name.charAt(i);
+            if(Character.isUpperCase(ch))
+            {
+                System.out.print("uppercase letter only:"+ch);
+            }
+        }
+    }
+}
+OUTPUT:
+DNSHA
+
+8.Create a new string with digits followed by letters from given string
+
+
 
