@@ -171,6 +171,163 @@ OUTPUT:
 DNSHA
 
 8.Create a new string with digits followed by letters from given string
+package dinesh21;
+
+import java.util.Scanner;
+
+public class StringwithLetter {
+    public static void main(String[] args) {
+        String  name = "ab1cd234ghtj";
+        System.out.println("before rearrange the string :"+name);
+        StringBuilder digits = new StringBuilder();
+        StringBuilder letters = new StringBuilder();
+
+        for(int i=0;i< name.length();i++)
+        {
+            char ch =name.charAt(i);
+            if(Character.isDigit(ch))
+            {
+                digits.append(ch);
+            }
+            else if(Character.isLetter(ch))
+            {
+                letters.append(ch);
+            }
+        }
+        String result = digits.toString()+letters.toString();
+        System.out.println(" rearranged string:"+result );
+    }
+}
+OUTPUT:
+before rearrange the string :ab1cd234ghtj
+ rearranged string:1234abcdghtj
+
+9.Create a new string after removing all spaces in given string
+
+package dinesh21;
+
+public class RemovingAllSpace {
+    public static void main(String[] args) {
+        String letter ="dinesh kumar";
+        StringBuilder name = new StringBuilder();
+        for(int i =0;i<letter.length();i++)
+        {
+           char  ch = letter.charAt(i);
+            if(!Character.isSpaceChar(ch))   // ! logical NOT IF NOT SPACE CONDITION TRUE
+            {
+               name.append(ch);
+            }
+        }
+        System.out.println(name.toString());
+
+    }
+}
+OUTPUT:
+dineshkumar
+
+11.check given string is Palindrome or not
+
+package dinesh21;
+
+import com.sun.security.jgss.GSSUtil;
+
+import java.util.Scanner;
+
+public class palindromeString {
+    public static void main(String[] args) {
+        Scanner dk= new Scanner (System.in);
+        System.out.println(" Enter the string:");
+        String original = dk.nextLine();
+         String reverse = "";
+        for(int i=original.length()-1;i>=0;i--)
+        {
+         reverse =reverse + original.charAt(i);
+        }
+        if(original.equals(reverse))
+        {
+            System.out.println("yes .. its a palindrome string:");
+        }
+        else
+        {
+            System.out.println(" its not a palindrome string:");
+        }
+
+    }
+}
+OUTPUT:
+ Enter the string:
+madam
+yes .. its a palindrome string:
+
+12.Create a word encoding program which moves each letter by 2
+Example A becomes C,B becomes D,Y becomes a so on.,
+
+package dinesh21;
+
+public class EncodingMovesLetter {
+    public static void main(String[] args) {
+        String input = "HelloWorLd 123";
+        String result;
+        StringBuilder encoder = new StringBuilder();
+        for(int i =0;i<input.length();i++)
+        {
+            char ch = input.charAt(i);
+            if(Character.isUpperCase(ch))
+            {
+                char shifted = (char)  (((ch-'A'+2)%26)+'A');
+                encoder.append(shifted);
+            } else if (Character.isLowerCase(ch))
+            {
+                char shifted =(char)(((ch-'a'+2)%26)+'a');
+                encoder.append(shifted);
+
+            }
+        }
+       result = encoder.toString();
+        System.out.println(" original: "+input);
+        System.out.println(" Encoder: "+result);
+
+    }
+}
+
+output:
+ original: HelloWorLd 123
+ Encoder: JgnnqYqtNf
+
+
+13.Print Each word in separate line from the given sentence
+
+
+package dinesh21;
+
+import java.util.Scanner;
+
+public class SeperatedLIneSentence {
+    public static void main(String[] args) {
+        Scanner dk = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        String name = dk.nextLine();
+        for(int i=0;i<name.length();i++)
+            {
+              char ch = name.charAt(i);
+            if(ch==' ')
+            {
+                System.out.println();
+            }
+            else {
+                System.out.print(ch);
+            }
+        }
+       // System.out.println();
+    }
+}
+output:
+Enter the number:
+dinesh kumar
+dinesh
+kumar
+
+14.print the first letter of each word in a sentence
 
 
 
